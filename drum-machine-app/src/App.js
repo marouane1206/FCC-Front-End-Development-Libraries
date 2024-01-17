@@ -335,8 +335,7 @@ class App extends React.Component {
         />
 
         <div className="logo">
-          <div className="inner-logo">FCC{String.fromCharCode(160)}</div>
-          <i className="inner-logo fa fa-free-code-camp" />
+          <div className="inner-logo">Drum App{String.fromCharCode(160)}</div>
         </div>
 
         <div className="controls-container">

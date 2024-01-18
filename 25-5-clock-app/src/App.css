@@ -1,38 +1,103 @@
-.App {
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+
+.pomodoro-clock {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 24px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.settings {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.settings p {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.controls span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.timer #time-left {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.controls button#start_stop {
+  background-color: #28a745;
+  color: #fff;
+  margin-right: 10px;
+  width: auto;
+  height: auto;
+}
+
+.controls button#reset {
+  background-color: #dc3545;
+  color: #fff;
+  width: auto;
+  height: auto;
+}
+
+audio {
+  display: none;
+}
+
+.author {
+  text-align: center;
+  font-family: Share Tech Mono, sans;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000000;
+}
+.author a {
+  text-decoration: none;
+  color: #a6cbf0;
+  line-height: 26px;
+}
+
+.author a:hover {
+  color: #007bff;
+  border-color: #007bff;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }

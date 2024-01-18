@@ -118,14 +118,8 @@ class App extends React.Component {
   }
 
   render() {
-    const {
-      breakLength,
-      sessionLength,
-      timerState,
-      timerType,
-      timer,
-      alarmColor,
-    } = this.state;
+    const { breakLength, sessionLength, timerState, timerType, timer } =
+      this.state;
 
     return (
       <div className="pomodoro-clock">
